@@ -4,7 +4,23 @@ This repository contains code and resources for predicting DON (vomitoxin) conce
 
 ## Repository Structure
 
-. ├── data/ │ ├── TASK_ML_INTERN.csv # Raw hyperspectral data file(s) │ └── ... # Additional data files as needed ├── models/ │ ├── pls_model.pkl # Saved PLS regression model (pickle file) │ ├── nn_model.pt # Saved PyTorch neural network model │ └── random_forest_model.pkl # Saved RF Regression model (pickle file) ├── notebooks/ │ └── Task.ipynb # Jupyter Notebook containing the main code for data exploration, modeling, and evaluation ├── streamlit_app/ │ └── app.py # Streamlit app for interactive predictions from CSV uploads | └── selected_features.pkl # Saved list of selected feature indices (pickle file) ├── requirements.txt # Python package dependencies └── README.md # This file
+```markdown
+.
+├── data/
+│   ├── TASK_ML_INTERN.csv        # Raw hyperspectral data file(s)
+├── models/
+│   ├── pls_model.pkl            # Saved PLS regression model (pickle file)
+│   ├── nn_model.pt              # Saved PyTorch neural network model
+│   ├── xgb_model.pkl            # Saved PyTorch XG Boost model
+│   └── random_forest_model.pkl  # Saved Random Forest Regression model (pickle file)
+├── notebooks/
+│   └── Task.ipynb               # Jupyter Notebook for data exploration, modeling, and evaluation
+├── streamlit_app/
+│   ├── app.py                   # Streamlit app for interactive predictions from CSV uploads
+│   └── selected_features.pkl    # Saved list of selected feature indices (pickle file)
+├── requirements.txt             # Python package dependencies
+└── README.md                    # Repository README file
+```
 
 
 ## Installation and Running the Code
